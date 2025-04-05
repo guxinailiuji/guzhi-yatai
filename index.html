@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>反关财经亚洲主要国家宽基指数报告 by不霁何虹</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.290.0/font/lucide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 添加Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <header class="mb-12 relative">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                <div>
+                    <h1 class="text-4xl font-bold mb-2 tracking-tight">反关财经亚洲主要国家宽基指数报告 by不霁何虹</h1>
+                    <p class="text-gray-600 max-w-3xl mb-4">本报告详细介绍了亚洲主要国家的宽基指数，包括指数简介、成分构成和主要成分股列表。通过不同的颜色方案代表各国国旗特色，帮助您快速区分各国市场特点。</p>
+                    
+                    <!-- 社交媒体图标区域 -->
+                    <div class="social-icons mt-3 mb-3">
+                        <a href="https://space.bilibili.com/不霁何虹" target="_blank" class="social-icon-link" title="在哔哩哔哩关注我">
+                            <div class="social-icon bilibili-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906L17.813 4.653zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773H5.333zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/></svg>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/@不霁何虹" target="_blank" class="social-icon-link" title="在YouTube上关注我">
+                            <div class="social-icon youtube-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.douyin.com/user/不霁何虹" target="_blank" class="social-icon-link" title="在抖音上关注我">
+                            <div class="social-icon douyin-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 9.84202C20.4357 9.84696 18.4221 9.20321 16.7435 8.00171V16.3813C16.7429 17.9333 16.219 19.443 15.2478 20.683C14.2766 21.9229 12.9047 22.8275 11.3419 23.2533C9.77922 23.6791 8.1211 23.604 6.61631 23.0401C5.11153 22.4761 3.84257 21.4548 3.00333 20.1268C2.16408 18.7987 1.80379 17.2378 1.97658 15.6907C2.14938 14.1436 2.84622 12.6919 3.95683 11.5641C5.06743 10.4363 6.5307 9.69322 8.08652 9.4332C9.64233 9.17318 11.2393 9.41323 12.6384 10.1152V13.848C11.8581 13.3756 10.9453 13.1613 10.0371 13.2346C9.12901 13.308 8.26397 13.6652 7.56635 14.2563C6.86872 14.8474 6.373 15.6435 6.15453 16.5367C5.93607 17.43 6.00775 18.3711 6.35932 19.2125C6.71089 20.0538 7.32419 20.7496 8.10202 21.1889C8.87984 21.6282 9.78558 21.7841 10.6702 21.631C11.5549 21.478 12.3673 21.0249 12.9748 20.3442C13.5823 19.6635 13.9501 18.796 14.0223 17.8828V0H17.764C17.764 0.32695 17.7891 0.654003 17.8384 0.978492C17.9749 1.82422 18.3283 2.62337 18.8681 3.31713C19.4079 4.0109 20.1178 4.57467 20.9322 4.95878C21.7466 5.3429 22.6421 5.53851 23.5476 5.52734L22.5 9.84202Z"/></svg>
+                            </div>
+                        </a>
+                        <a href="https://weibo.com/u/不霁何虹" target="_blank" class="social-icon-link" title="在微博上关注我">
+                            <div class="social-icon weibo-icon">
+                                <i class="fab fa-weibo"></i>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/不霁何虹" target="_blank" class="social-icon-link" title="在X/Twitter上关注我">
+                            <div class="social-icon twitter-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.xiaohongshu.com/user/profile/不霁何虹" target="_blank" class="social-icon-link" title="在小红书上关注我">
+                            <div class="social-icon redbook-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.83 8.76L19.83 4.76C19.83 3.71 18.98 2.87 17.93 2.87L6.07 2.87C5.02 2.87 4.17 3.71 4.17 4.76L4.17 8.76L5.18 8.76L5.18 19.26C5.18 20.13 5.88 20.83 6.75 20.83L17.25 20.83C18.12 20.83 18.82 20.13 18.82 19.26L18.82 8.76L19.83 8.76ZM17.82 8.76L17.82 19.26C17.82 19.58 17.57 19.83 17.25 19.83L6.75 19.83C6.43 19.83 6.18 19.58 6.18 19.26L6.18 8.76L17.82 8.76ZM18.93 7.76L5.07 7.76L5.07 4.76C5.07 4.26 5.56 3.76 6.07 3.76L17.93 3.76C18.43 3.76 18.93 4.26 18.93 4.76L18.93 7.76ZM8.5 11.5L14.5 11.5C14.78 11.5 15 11.28 15 11C15 10.72 14.78 10.5 14.5 10.5L8.5 10.5C8.22 10.5 8 10.72 8 11C8 11.28 8.22 11.5 8.5 11.5ZM8.5 15.5L14.5 15.5C14.78 15.5 15 15.28 15 15C15 14.72 14.78 14.5 14.5 14.5L8.5 14.5C8.22 14.5 8 14.72 8 15C8 15.28 8.22 15.5 8.5 15.5Z"/></svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="countries-nav mt-4 md:mt-0 bg-white shadow-sm rounded-lg p-3" id="countries-nav">
+                    <!-- 国家导航菜单将通过JavaScript生成 -->
+                </nav>
+            </div>
+        </header>
+
+        <main id="all-countries-content" class="mt-16">
+            <!-- 所有国家内容将在此通过JavaScript生成 -->
+        </main>
+
+        <footer class="mt-20 pt-8 border-t border-gray-200 text-center text-gray-600 text-sm">
+            <p>反关财经 by不霁何虹</p>
+        </footer>
+    </div>
+
+    <!-- 回到顶部按钮 -->
+    <div class="nav-buttons">
+        <div id="scroll-top" class="nav-button scroll-top-button" title="回到顶部">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </div>
+    </div>
+
+    <script src="flags.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false });
+
+        // 回到顶部按钮功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollTopButton = document.getElementById('scroll-top');
+            const countriesNav = document.getElementById('countries-nav');
+            
+            // 监听滚动事件
+            window.addEventListener('scroll', function() {
+                // 回到顶部按钮显示/隐藏逻辑
+                if (window.scrollY > 300) {
+                    scrollTopButton.classList.add('visible');
+                } else {
+                    scrollTopButton.classList.remove('visible');
+                }
+                
+                // 导航栏固定效果
+                if (window.scrollY > 150) {
+                    countriesNav.classList.add('nav-fixed');
+                } else {
+                    countriesNav.classList.remove('nav-fixed');
+                }
+            });
+            
+            // 点击回到顶部
+            scrollTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,574 @@
+:root {
+    --japan-red: #BC002D;
+    --japan-bg: #F9F9F9;
+    
+    --korea-red: #CD2E3A;
+    --korea-blue: #0047A0;
+    --korea-bg: #F5F7FA;
+    
+    --taiwan-red: #FE0000;
+    --taiwan-blue: #000095;
+    --taiwan-bg: #F5F7FA;
+    
+    --singapore-red: #ED2939;
+    --singapore-bg: #FAFAFA;
+    
+    --malaysia-blue: #00006A;
+    --malaysia-yellow: #FFCC00;
+    --malaysia-bg: #F5F7FA;
+    
+    --india-saffron: #FF9933;
+    --india-green: #138808;
+    --india-blue: #000080;
+    --india-bg: #FFF7F0;
+    
+    --indonesia-red: #FF0000;
+    --indonesia-bg: #FFF5F5;
+    
+    --thailand-red: #ED1C24;
+    --thailand-blue: #241D4F;
+    --thailand-bg: #F8F8FC;
+    
+    --vietnam-red: #DA251D;
+    --vietnam-yellow: #FFFF00;
+    --vietnam-bg: #FFF8F8;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* Japan Theme */
+.japan-theme {
+    --accent-color: var(--japan-red);
+    --bg-color: var(--japan-bg);
+}
+
+/* Korea Theme */
+.korea-theme {
+    --accent-color: var(--korea-blue);
+    --secondary-color: var(--korea-red);
+    --bg-color: var(--korea-bg);
+}
+
+/* Taiwan Theme */
+.taiwan-theme {
+    --accent-color: var(--taiwan-blue);
+    --secondary-color: var(--taiwan-red);
+    --bg-color: var(--taiwan-bg);
+}
+
+/* Singapore Theme */
+.singapore-theme {
+    --accent-color: var(--singapore-red);
+    --bg-color: var(--singapore-bg);
+}
+
+/* Malaysia Theme */
+.malaysia-theme {
+    --accent-color: var(--malaysia-blue);
+    --secondary-color: var(--malaysia-yellow);
+    --bg-color: var(--malaysia-bg);
+}
+
+/* India Theme */
+.india-theme {
+    --accent-color: var(--india-saffron);
+    --secondary-color: var(--india-green);
+    --tertiary-color: var(--india-blue);
+    --bg-color: var(--india-bg);
+}
+
+/* Indonesia Theme */
+.indonesia-theme {
+    --accent-color: var(--indonesia-red);
+    --bg-color: var(--indonesia-bg);
+}
+
+/* Thailand Theme */
+.thailand-theme {
+    --accent-color: var(--thailand-blue);
+    --secondary-color: var(--thailand-red);
+    --bg-color: var(--thailand-bg);
+}
+
+/* Vietnam Theme */
+.vietnam-theme {
+    --accent-color: var(--vietnam-red);
+    --secondary-color: var(--vietnam-yellow);
+    --bg-color: var(--vietnam-bg);
+}
+
+.theme-header {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 12px;
+}
+
+.theme-section {
+    background-color: var(--bg-color);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.theme-section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.theme-badge {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.theme-accent {
+    color: var(--accent-color);
+}
+
+.font-geist-mono {
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, monospace, Menlo, monospace;
+}
+
+/* Country overview cards */
+.country-overview-card {
+    border-top: 3px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.country-overview-card:hover {
+    transform: translateY(-4px);
+}
+
+.component-list-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.component-list-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.component-list-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.component-list-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.component-list-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+.country-flag-container {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #f3f4f6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flag-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Country section styling */
+.country-section {
+    position: relative;
+    padding-top: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.country-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    border-radius: 8px 8px 0 0;
+}
+
+/* 行业分布图样式 */
+.industry-chart-container {
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--accent-color);
+}
+
+.industry-legend {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.industry-legend-item {
+    margin-bottom: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.industry-legend-item:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    transform: translateX(4px);
+}
+
+.industry-legend-item.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.industry-color {
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.industry-percentage-bar-container {
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.industry-percentage-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-top-button {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-top-button.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* 闪烁效果 */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--pulse-color-rgb), 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(var(--pulse-color-rgb), 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(var(--pulse-color-rgb), 0);
+    }
+}
+
+.pulsing {
+    animation: pulse 1.5s infinite;
+}
+
+/* 百分比条闪烁效果 */
+@keyframes barPulse {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.bar-pulsing {
+    animation: barPulse 1.5s infinite;
+}
+
+/* 饼图扇区闪烁效果 */
+@keyframes chartHighlight {
+    0% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.chart-sector-highlight {
+    animation: chartHighlight 1.5s infinite;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .industry-chart-container .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .industry-legend {
+        padding-top: 0;
+    }
+    
+    .country-section::before {
+        height: 100px;
+    }
+    
+    .nav-buttons {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* 页面平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation menu */
+.countries-nav {
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.countries-nav.nav-fixed {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.country-nav-link {
+    display: inline-block;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.country-nav-link:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.country-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.country-nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Japan theme navigation */
+.japan-theme.country-nav-link {
+    color: var(--japan-red);
+    border-color: var(--japan-red);
+}
+
+.japan-theme.country-nav-link:hover {
+    background-color: var(--japan-red);
+}
+
+/* Korea theme navigation */
+.korea-theme.country-nav-link {
+    color: var(--korea-blue);
+    border-color: var(--korea-blue);
+}
+
+.korea-theme.country-nav-link:hover {
+    background-color: var(--korea-blue);
+}
+
+/* Add other country-specific nav styles as needed */
+
+/* Media query for sticky nav on mobile */
+@media (max-width: 768px) {
+    .countries-nav {
+        position: relative;
+        top: 0;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+    }
+    
+    .countries-nav::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .countries-nav::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    
+    .countries-nav::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 10px;
+    }
+    
+    .country-nav-link {
+        margin: 2px;
+    }
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icon-link {
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: block;
+}
+
+.social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.15);
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover::before {
+    transform: translateY(0);
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.social-icon:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.social-icon svg {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.bilibili-icon {
+    background-color: #00A1D6;
+}
+
+.youtube-icon {
+    background-color: #FF0000;
+}
+
+.douyin-icon {
+    background: linear-gradient(to right, #FF0050, #00F2EA);
+}
+
+.weibo-icon {
+    background-color: #E6162D;
+}
+
+.twitter-icon {
+    background-color: #000000;
+}
+
+.redbook-icon {
+    background-color: #FF2442;
+}
+
+@media (max-width: 640px) {
+    .social-icons {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    
+    .social-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+    }
+    
+    .social-icon svg {
+        width: 13px;
+        height: 13px;
+    }
+}
